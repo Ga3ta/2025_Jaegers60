@@ -1,0 +1,54 @@
+{
+  "version": "2025.0",
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 3.8720286885245896,
+        "y": 5.619364754098362
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.712531017369726,
+        "y": 6.94137717121588
+      },
+      "isLocked": false,
+      "linkedName": "DejandoCoral1"
+    },
+    {
+      "anchor": {
+        "x": 1.6638337468982625,
+        "y": 7.340880893300248
+      },
+      "prevControl": {
+        "x": 2.0733250620347388,
+        "y": 6.412034739454095
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "EnHuman"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "pointTowardsZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 4.72,
+    "maxAcceleration": 4.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
+    "nominalVoltage": 12.0,
+    "unlimited": false
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -142.88313931672968
+  },
+  "reversed": false,
+  "folder": null,
+  "idealStartingState": {
+    "velocity": 0,
+    "rotation": 29.538782259557987
+  },
+  "useDefaultConstraints": true
+}
