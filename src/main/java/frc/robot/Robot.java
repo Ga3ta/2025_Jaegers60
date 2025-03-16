@@ -8,8 +8,9 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.event.EventLoop;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
-//import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
-//import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
+// import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
+// import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 /**
  * The methods in this class are called automatically corresponding to each mode, as described in
  * the TimedRobot documentation. If you change the name of this class or the package after creating
@@ -19,7 +20,7 @@ public class Robot extends TimedRobot {
   private Command m_autonomousCommand;
   public static int nivel_tomar = 0;
   public static int nivel_dejar = 0;
-  //public static SendableChooser<String> autoChooser  = new SendableChooser<>();
+  // public static SendableChooser<String> autoChooser  = new SendableChooser<>();
   public static EventLoop m_loop = new EventLoop();
   private final RobotContainer m_robotContainer;
 
@@ -30,12 +31,12 @@ public class Robot extends TimedRobot {
   public Robot() {
     // Instantiate our RobotContainer.  This will perform all our button bindings, and put our
     // autonomous chooser on the dashboard.
-    //autoChooser.addOption("Modo 1", "modo1");
-    //autoChooser.addOption("Modo 2", "modo2");
-    //autoChooser.addOption("Modo 3", "modo3");
-    //autoChooser.addOption("Modo Salida", "modo_salida");
-    
-    //SmartDashboard.putData("Modo Autonomo",autoChooser);
+    // autoChooser.addOption("Modo 1", "modo1");
+    // autoChooser.addOption("Modo 2", "modo2");
+    // autoChooser.addOption("Modo 3", "modo3");
+    // autoChooser.addOption("Modo Salida", "modo_salida");
+
+    // SmartDashboard.putData("Modo Autonomo",autoChooser);
     nivel_tomar = 0;
     nivel_dejar = 0;
 
@@ -57,7 +58,6 @@ public class Robot extends TimedRobot {
     // block in order for anything in the Command-based framework to work.
     CommandScheduler.getInstance().run();
     m_loop.poll();
-      
   }
 
   /** This function is called once each time the robot enters Disabled mode. */
