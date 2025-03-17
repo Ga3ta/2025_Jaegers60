@@ -32,7 +32,7 @@ public final class Constants {
     public static final double elevador_maxVelocity = 3000;
     public static final double elevador_maxAcceleration = 5000;
     public static final double elevador_LoopError = 0.5;
-    public static final double elevador_minSetPoint = 0;
+    public static final double elevador_minSetPoint = -200;
     public static final double elevador_maxSetPoint = 480;
 
     public static final double brazo_p = 0.2;

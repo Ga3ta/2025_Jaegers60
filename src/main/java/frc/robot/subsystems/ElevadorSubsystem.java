@@ -56,7 +56,7 @@ public class ElevadorSubsystem extends SubsystemBase {
   }
 
   private double[] elevadorMatrizPosicion = {
-    0, 0, 50, 100, 120, 130, 140, 125, 135,
+    0, 0, 50, 100, 120, 130, 480, 125, 135,
   };
 
   private String[] elevadorPosicionesNombres = {
@@ -216,7 +216,7 @@ public class ElevadorSubsystem extends SubsystemBase {
     } else if (in) {
       output = -0.5;
       if (coral_tomado) {
-        output = 0;
+        output = -0.2;
       }
     }
     m_motor_taker.set(output);
@@ -371,7 +371,7 @@ public class ElevadorSubsystem extends SubsystemBase {
                 m_elevador_current_position, m_brazo_current_position, PosicionGiro.Vertical));
   }
 
-  public Command dejarCoralEnNivel(int posicion) {
+  public Command dejarCoral() {
     return new SequentialCommandGroup();
   }
 
